@@ -83,11 +83,11 @@ Mysql的binlog必须是ROW模式，不然启动会报错。 连接Mysql的用户
 首先查询一下是否开启了binlog
 
 ```
-#进入mysql
+//进入mysql
 mysql -uroot -p
-#输入密码，然后输入如下命令查看binlog开启状态
+//输入密码，然后输入如下命令查看binlog开启状态
 show variables like '%log_bin%';
-#，ON为开启了，如果没有开启的话为OFF。
+//ON为开启了，如果没有开启的话为OFF。
 ```
 
 1、windows
