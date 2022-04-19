@@ -25,6 +25,9 @@ go env -w GOPROXY=https://goproxy.cn,direct
 //拉取源码
 go get -u github.com/siddontang/go-mysql-elasticsearch
 
-//
+//编译本系统对应可执行程序
+GO111MODULE=on go build -o bin/go-mysql-elasticsearch ./cmd/go-mysql-elasticsearch
+//编译windows下可执行程序
+GO111MODULE=on GOOS=windows GOARCH=amd64 go build -o bin/go-mysql-elasticsearch.exe ./cmd/go-mysql-elasticsearch
 ```
 
